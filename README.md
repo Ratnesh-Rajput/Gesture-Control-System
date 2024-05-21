@@ -1,6 +1,6 @@
-# Hand controller: control cars 🚗 using hands, in Games
+# Gesture controller:
 
-This project uses the Python OpenCV module to detect hand gestures. By using computer vision techniques, the program captures the movements of the user's hand and translates them into corresponding actions in the game. This allows the user to drive the car, change directions, and perform other actions simply by moving their hand in front of the camera.
+This project uses the Python OpenCV module to detect hand gestures. By using computer vision techniques, the program captures the movements of the user's hand (& ***proposed:*** translates them into corresponding actions in the game), after that it translates those actions to direction keys(***WASD***). 
 
 
 
@@ -10,11 +10,15 @@ Run the following command:
 ```sh
 pip install -r requirements.txt
 ```
+If a error involving mediapipes pops, solve it via running this command:
+```
+py -m pip install mediapipe
+```
 
 ## Usage
 
 #### Using PC camera:
-- Run `main-pc-cam.py`
+- Run `python main-pc-cam.py`
 
 
 And put your hand in front of the Camera to provide directions (previewed in the console), which when integrated can be used to control motion virtually! 🚗
